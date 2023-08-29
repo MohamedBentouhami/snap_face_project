@@ -1,12 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { FaceSnap } from './models/face-snap.model';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+import { concat, interval, of } from 'rxjs';
+import { concatMap, mergeMap, delay, exhaustMap, map, switchMap, take, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent  {
 
 
 }
