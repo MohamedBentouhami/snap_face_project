@@ -34,7 +34,7 @@ export class FaceSnapService {
         snaps: faceSnap.snaps + (snapType === 'snap' ? 1 : -1)
       })),
       switchMap(updatedFaceSnap => this.http.put<FaceSnap>(
-        `http://localhost:3000/${faceSnapedId}`,
+        `http://localhost:3000/facesnaps/${faceSnapedId}`,
         updatedFaceSnap)
       )
     );
